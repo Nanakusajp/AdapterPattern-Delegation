@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace AdapterPattern_Delegation
 {
-    public abstract class Print
+    public interface IPrint
     {
-        public abstract void PrintWeak();
-        public abstract void PrintStrong();
+        void PrintWeak();
+        void PrintStrong();
     }
 }
