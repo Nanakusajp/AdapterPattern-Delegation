@@ -8,8 +8,8 @@ namespace AdapterPattern_Delegation
 {
     public class Banner
     {
-        private String str;
-        public Banner(String str)
+        private readonly string str;
+        public Banner(string str)
         {
             this.str = str;
         }
