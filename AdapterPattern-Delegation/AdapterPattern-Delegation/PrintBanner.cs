@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace AdapterPattern_Delegation
 {
-    public class PrintBanner : Print
+    public class PrintBanner : IPrint
     {
-        private Banner banner;
-        public PrintBanner(String str)
+        private readonly Banner banner;
+        public PrintBanner(string str)
         {
             banner = new Banner(str);
         }
 
-        public override void PrintWeak()
+        public void PrintWeak()
         {
             banner.ShowWIthParen();
         }
-        public override void PrintStrong()
+        public void PrintStrong()
         {
             banner.ShowWithAster();
         }

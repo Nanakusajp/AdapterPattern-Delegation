@@ -10,7 +10,7 @@ namespace AdapterPattern_Delegation
     {
         static void Main(string[] args)
         {
-            Print print = new PrintBanner("Hello");
+            IPrint print = new PrintBanner("Hello");
             print.PrintWeak();
             print.PrintStrong();
 
