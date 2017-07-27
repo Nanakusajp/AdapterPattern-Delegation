@@ -15,11 +15,11 @@ namespace AdapterPattern_Delegation
         }
         public void ShowWIthParen()
         {
-            Console.WriteLine("(" + str + ")");
+            Console.WriteLine($"({str})");
         }
         public void ShowWithAster()
         {
-            Console.WriteLine("*" + str + "*");
+            Console.WriteLine($"*{str}*");
         }
     }
 }
